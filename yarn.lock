@@ -2498,6 +2498,14 @@ expo-constants@~13.0.0:
     "@expo/config" "^6.0.6"
     uuid "^3.3.2"
 
+expo-document-picker@~10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/expo-document-picker/-/expo-document-picker-10.1.1.tgz#e71cbcd30fbf607eb587161ccb214142eb381acd"
+  integrity sha512-/ge49Qb5yDr3NKymK/ZR0lmfO3S1zEd4laW00IYhaT0E6okuHqqPg/HXxQM3ULXoEHcnzpy1+LRxuwD8Z6op3g==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    uuid "^3.3.2"
+
 expo-error-recovery@~3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/expo-error-recovery/-/expo-error-recovery-3.0.4.tgz#de85c8c6b387d9b1e532256600882f2c2704383a"
