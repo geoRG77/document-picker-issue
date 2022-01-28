@@ -1,23 +1,16 @@
+import * as React from "react";
 import * as DocumentPicker from "expo-document-picker";
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { View, StyleSheet, Button } from "react-native";
 
 export default function App() {
-  selectDocument = async () => {
-    let file = await DocumentPicker.getDocumentAsync({
-      type: "application/pdf",
-      copyToCacheDirectory: true,
-    });
-
+  const selectDocument = async () => {
+    let file = await DocumentPicker.getDocumentAsync({});
     console.log(file.name);
   };
 
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Text>Hello world!</Text>
-      <Button title="Upload file" onPress={selectDocument} />
+      <Button title="Select file" onPress={selectDocument} />
     </View>
   );
 }
@@ -25,8 +18,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#ecf0f1",
   },
 });
